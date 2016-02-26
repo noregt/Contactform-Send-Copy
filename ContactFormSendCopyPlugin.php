@@ -46,7 +46,6 @@ class ContactFormSendCopyPlugin extends BasePlugin
 
         //logic for sending a second email
         craft()->on('email.onSendEmail', function(Event $event) {
-           //  echo "Variables: <pre>".print_r($event->params['variables'], true)."</pre>";
             if(!isset($event->params['variables']['secondEmail'])) {
                 //this is the email for the user
                 $secondEmail = new EmailModel();

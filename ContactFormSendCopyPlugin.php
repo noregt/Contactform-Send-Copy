@@ -36,7 +36,7 @@ class ContactFormSendCopyPlugin extends BasePlugin
 
                     //this is the email for the system administration
                     $email->fromEmail = $email->replyTo;
-                    $email->body = "Message from our contactform \n\n
+                    $email->body = "Message from our contact form \n\n
                         ".$email->fromName."\n\n
                         Email address: ".$email->replyTo."\n\n
                         The message: \n\n ".$email->body;
